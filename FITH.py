@@ -4,17 +4,6 @@ from random import randint, choice
 import sys
 import time
 
-numls = []
-
-with open("score.txt","r") as f:
-    content = f.read()
-    digit_count = 0
-    for char in content:
-        if char.isdigit():
-            digit_count += 1
-            if digit_count >= 51:
-                numls.append(char)
-    number = int("".join(map(str,numls)))
 
 
 class Main(QDialog):
@@ -47,6 +36,22 @@ class Main(QDialog):
             Press OK to replay''')
             time.sleep(5)
             self.stars.display(0)
+
+try:
+    numls = []
+
+    with open("score.txt","r") as f:
+        content = f.read()
+        digit_count = 0
+        for char in content:
+            if char.isdigit():
+                digit_count += 1
+                if digit_count >= 51:
+                    numls.append(char)
+        number = int("".join(map(str,numls)))
+except:
+    number = 0
+
 
 
 if __name__ == "__main__":
