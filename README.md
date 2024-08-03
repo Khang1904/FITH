@@ -1,5 +1,5 @@
 <h1>Fire In The Hole - an RNG based game</h1>
-<p>This is a small game, made by me, a secondary school.</p>
+<p>This is a small game, made by me, a secondary schooler.</p>
 <h2>Prerequisites</h2>
 <p><b>Python</b> - <i>ver 3.6.1 - 3.11.9</i></p>
 <p><b>PyQt6</b> - <i>pip install pyqt6</i></p>
